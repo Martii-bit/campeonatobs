@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-PT">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Predictions — PCBS Da Wish</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="styles.css"></head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html"><span class="logo">PW</span><span style="margin-left:8px">PCBS Da Wish</span></a>
+    <nav class="nav-links" aria-label="main navigation">
+      <a href="predictions.html" class="active">Predictions</a>
+      <a href="leaderboard.html">Leaderboard</a>
+      <a href="rewards.html">Rewards</a>
+      <a href="teams.html">Teams</a>
+      <a href="profile.html">Profile</a>
+      <a href="rules.html">Rules</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+  </div>
+</header>
+
+<main class="main container">
+  <h2>Predictions</h2>
+  <p class="lead">Escolha a equipa vencedora antes da partida começar. Cada aposta custa <strong>points</strong>.</p>
+  <section id="matches" class="grid"></section>
+
+  <section class="card" style="margin-top:18px;">
+    <h3>Cart (Apostas)</h3>
+    <ul id="bet-list" class="list"></ul>
+    <div style="margin-top:12px; display:flex; gap:8px; justify-content:flex-end">
+      <button class="btn btn-primary" id="confirm-bets">Processar Apostas</button>
+      <button class="btn" id="clear-bets">Limpar</button>
+    </div>
+  </section>
+</main>
+
+<script src="app.js" defer></script>
+<script src="auth.js" defer></script>
+</body>
+</html>
